@@ -40,7 +40,7 @@ class Tone:
         T = int(frequency * duration)  # repeat for T cycles
         dt = 1.0 / Tone.fs  # Sampling step size
 
-        # Defines tone by sinusoid equation (sin wave)
+        # Defines tone by sinusoid equation (sine wave)
         # Check it on https://en.wikipedia.org/wiki/Sine_wave
         tone = (amplitude * math.sin(2 * math.pi * frequency * n * dt)
                 for n in range(N))
